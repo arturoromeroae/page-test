@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <title>Prueba</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a class="" href="index.html"><strong>Home</strong></a></li>
+            <li><a href="#">page1</a></li>
+            <li><a href="#">page2</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Paises del Mundo</h1>
+    </header>
+    <div>
+        <h3>Se muestra una lista de paises con sus poblaciones</h3>
+    </div>
+
+    <div id="boxBel">
+        <h4>Argentina</h4>
+        <button id="myBtn" onclick="argentina()">obtener capital</button>
+        <button id="myBtn" class="datos" onclick="argentina()">cargar json</button>
+
+        <div id='myModal' class='modal'>
+            <div class='modal-content'>
+                <span class='close'>&times;</span>
+                <p><b>Capital</b></p><br>
+                <p id="argen"></p>
+            </div>
+        </div>
+    </div>
+        <div id="boxBel">
+            <h4>Belize</h4>
+            <button id="myBtn2" onclick="belize()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="belize()">cargar json</button>
+
+            <div id='myModal2' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="bel"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Bolivia (Plurinational State of)</h4>
+            <button id="myBtn3" onclick="bolivia()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="bolivia()">cargar json</button>
+
+            <div id='myModal3' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="bol"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Chile</h4>
+            <button id="myBtn4" onclick="chile()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="chile()">cargar json</button>
+
+            <div id='myModal4' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="chil"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Colombia</h4>
+            <button id="myBtn5" onclick="colombia()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="colombia()">cargar json</button>
+
+            <div id='myModal5' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="col"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Costa Rica</h4>
+            <button id="myBtn6" onclick="costa()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="costa()">cargar json</button>
+
+            <div id='myModal6' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="cost"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Cuba</h4>
+            <button id="myBtn7" onclick="cuba()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="cuba()">cargar json</button>
+
+            <div id='myModal7' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="cub"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Dominican Republic</h4>
+            <button id="myBtn8" onclick="dominican()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="dominican()">cargar json</button>
+
+            <div id='myModal8' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="dom"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Ecuador</h4>
+            <button id="myBtn9" onclick="ecuador()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="ecuador()">cargar json</button>
+
+            <div id='myModal9' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="ecu"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>El Salvador</h4>
+            <button id="myBtn10" onclick="salvador()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="salvador()">cargar json</button>
+
+            <div id='myModal10' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="salv"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Equatorial Guinea</h4>
+            <button id="myBtn11" onclick="equatorial()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="equatorial()">cargar json</button>
+
+            <div id='myModal11' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="equa"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Guam</h4>
+            <button id="myBtn12" onclick="guam()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="guam()">cargar json</button>
+
+            <div id='myModal2' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="gua"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Guatemala</h4>
+            <button id="myBtn13" onclick="guatemala()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="guatemala()">cargar json</button>
+
+            <div id='myModal13' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="guat"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Honduras</h4>
+            <button id="myBtn14" onclick="honduras()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="honduras()">cargar json</button>
+
+            <div id='myModal14' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="hon"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Mexico</h4>
+            <button id="myBtn15" onclick="mexico()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="mexico()">cargar json</button>
+
+            <div id='myModal15' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="mex"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Nicaragua</h4>
+            <button id="myBtn16" onclick="nicaragua()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="nicaragua()">cargar json</button>
+
+            <div id='myModal16' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="nic"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Panama</h4>
+            <button id="myBtn17" onclick="panama()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="panama()">cargar json</button>
+
+            <div id='myModal17' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="pan"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Paraguay</h4>
+            <button id="myBtn18" onclick="paraguay()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="paraguay()">cargar json</button>
+
+            <div id='myModal18' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="par"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Peru</h4>
+            <button id="myBtn19" onclick="peru()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="peru()">cargar json</button>
+
+            <div id='myModal19' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="pe"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Puerto Rico</h4>
+            <button id="myBtn20" onclick="puerto()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="puerto()">cargar json</button>
+
+            <div id='myModal20' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="pr"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Spain</h4>
+            <button id="myBtn21" onclick="spain()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="spain()">cargar json</button>
+
+            <div id='myModal21' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="spa"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Uruguay</h4>
+            <button id="myBtn22" onclick="uruguay()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="uruguay()">cargar json</button>
+
+            <div id='myModal22' class='modal'>
+                <div class='modal-content'>
+                    <span class='close'>&times;</span>
+                    <p><b>Capital</b></p><br>
+                    <p id="uru"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Venezuela (Bolivarian Republic of)</h4>
+            <button id="myBtn23" class="datos" onclick="venezuela()">obtener capital</button>
+            <button id="myBtn" class="datos" onclick="venezuela()">cargar json</button>
+            
+            <div id='myModal23' class='modal'>
+                <div class='modal-content'>
+                  <span class='close'>&times;</span>
+                  <p><b>Capital</b></p><br>
+                  <p id="ve"></p>
+                </div>
+            </div>
+        </div>
+        <div id="boxBel">
+            <h4>Western Sahara</h4>
+            <button id="myBtn24" class="datos" onclick="western()">obtener capital</button>
+            <button id="myBtn2" class="datos" onclick="western()">cargar json</button>
+
+            <div id='myModal24' class='modal'>
+                <div class='modal-content'>
+                  <span class='close'>&times;</span>
+                  <p><b>Capital</b></p><br>
+                  <p id="wes"></p>
+                </div>
+            </div>
+        </div>
+
+    <footer>
+        <p>2021 TM</p>
+    </footer>
+    <script src="js/api.js"></script>
+</body>
+
+</html>
